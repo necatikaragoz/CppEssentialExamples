@@ -4,6 +4,8 @@ Author: Necati KARAGOZ
 */
 //Binary search is an efficient algorithm for finding an item from a sorted list of items
 //Binary search only work with sorted arrays.
+// if N == 100  then,  in the worst case,  we need log2(1000) iterations. 
+// That means means = O(Log(N)) time complexity
 
 /* Run commands
  open terminal 
