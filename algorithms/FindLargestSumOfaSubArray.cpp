@@ -143,6 +143,25 @@ int LargestSum_KadanesSum_vector(std::vector<int> A) {
     
 }
 
+int lowerBound(std::vector<int> A, int Val) 
+{
+    // your code goes here
+    
+    int maxloverBound = -1;
+    
+    for(int i : A)
+    {
+        
+        if(i <= Val)
+        {
+            maxloverBound = i;
+        }
+    }
+    
+
+    return maxloverBound;
+    
+}
 
 
 int main ()
@@ -170,8 +189,11 @@ int main ()
 
     std::cout << "LargestSum_KadanesSum = " << result << std::endl;
 
-
+    std::vector<int> vecx = {-1,-1, 2,3,5 };
+    //std::vector<int> vecx = {1, 2, 3,4,6 };
     
+    result = lowerBound(vecx, 0);
 
+    std::cout << "LlowerBound= " << result << std::endl;
 }
 
